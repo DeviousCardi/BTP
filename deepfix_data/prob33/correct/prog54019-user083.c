@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{   int hel,ptf,i,j,m,n=0;
+    scanf("%d\n%d\n",&hel,&ptf);
+    for(i=0;i<ptf;i++){
+        scanf("%d",&m);
+        if((m-n)>0){
+            n=m; }
+        else if((m-n)<0){
+            n=m;
+            hel=hel+(m-n); }
+        if(hel==0)
+        break; }
+    if(hel<=0)
+    printf("NO");
+    else if(hel>0)
+    printf("YES");
+    return 0; }

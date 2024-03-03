@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+int Catalan_no(int n,int i) {
+    int sum;
+    if(n==0) {
+        return 1; }
+    sum+=Catalan_no(i,i+1)*Catalan_no(n-i,i+1);
+    if(i==n)
+    return sum;
+    return 0; }
+int main() {
+	int i,t,k;
+	scanf("%d\n",&t);
+	for(i=0;i<t;i++) {
+	    scanf("%d\n",&k);
+	    printf("%d\n",Catalan_no(k,0)); }
+	return 0; }

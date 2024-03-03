@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+long *memarray[3];
+long getways(int x, int m) {
+    if(m==1)
+    return 1;
+    if(m==2)
+    return x/3;
+    if(m==3&&x>5)
+    return getways(x-5,m-1)+1+getways(x-5,m); }
+int main() {
+    int m,n,sum=0;
+    scanf("%d",&n);
+    for(m=1;m<4;m++)
+    {sum=sum+getways(n,m);
+    printf("%d %d ",m,sum);
+        printf("\n"); }
+    printf("%d",sum);
+    return 0; }

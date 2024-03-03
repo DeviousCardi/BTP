@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int height;
+	int i,j,k,space_count=height/2;
+	c_count=1;
+	scanf("%d",&height);
+	for(i=0;i<height;i++) {
+	    for(k=0;k<space_count;k++) {
+	        printf(" "); }
+	    space_count--;
+	    for(j=0;j<c_count;j++) {
+	       printf("5"); }
+	    printf("\n");
+	    c_count+=2; }
+	return 0; }

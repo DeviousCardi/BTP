@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main() {
+	int a, b, c, d=5;
+	if ((a>=b)&&(a>=c))
+	{ if (a<b+c)
+	  if (a*a < b*b +c*c)
+	    d=1;
+	   else
+	    d=0; }
+	else if((b>c)&&(b>a))
+	{ if (b<a+c)
+	  if (b*b < a*a +c*c)
+	   d=1;
+	  else
+	   d=0; }
+	else
+	{ if (c<a+b)
+	  if (c*c < b*b +a*a)
+	  d=1;
+	  else
+	   d=0; }
+    switch (d)
+    {case 1:printf("\nAcute Triangle"); break;
+     case 0:printf("Not Acute Triangle"); break;
+     defaut:printf("Cannot form a Triangle"); }
+	return 0; }

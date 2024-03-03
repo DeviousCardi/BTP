@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int m,n,c,i,j,k=0;
+    int max ;
+    scanf("%d%d",&n,&m);
+     int sum ;
+    for(i=1;i<=n;i++)
+    {for(j=1;j<=m;j++)
+    sum=0 ; {
+     scanf("%d",&c);
+    sum=sum+c; }
+      if(sum>k)
+     {k=sum ;
+         max=sum ; } }
+        printf("%d\n",max);
+    return 0; }

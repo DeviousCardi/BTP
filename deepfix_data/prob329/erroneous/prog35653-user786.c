@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    int a;int b;intc;
+    scanf("%d %d %d",&a,&b,&c);
+	if (((a*a=b*b+c*c)||(b*b=c*c+a*a)||(c*c=b*b+a*a))&&((a<b+c)&&(b<c+a)&&(c<b+a))) {printf("Right Triangle");}
+	else if ((a<b+c)&&(b<c+a)&&(c<b+a)) {printf("Not Right Triangle");}
+	else printf("Cannot form a Triangle")
+	return 0; }

@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int N,a[10000],S;
+	scanf("%d",N);
+	for(int i=0;i<N;i++)
+	scanf("%d",a[i]);
+	scanf("%d",S);
+	for(i=0;i<N;i++)
+	{ for(int j=i+1;j<N;j++)
+	  if(a[i]+a[j]==S)
+	  printf("(%d,%d,)",a[i],a[j]); }
+	return 0; }

@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+    int k,n,i;
+    scanf("%d%d",&k,&n);
+    int s[n];
+    scanf("%d",&s[i]);
+    for (i=0;i<=100;i++){
+        for (int j=0;j<=n;j++){
+            if (s[i]+s[j]==k){
+                printf("lucky"); }
+            else continue; } }
+    return 0; }

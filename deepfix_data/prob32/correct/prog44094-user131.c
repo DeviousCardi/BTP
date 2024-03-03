@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int s[19];
+	int n,i;
+	scanf("%d",&n);
+	for(i=0;i<n;i++) {
+	  scanf("%d",&s[i]); }
+	int k,temp;   temp=0;
+	for (k=1;k<n-1;k++)  {
+	    if (s[k-1]>s[k] && s[k]<s[k+1])
+	    { temp=1;}
+	    else {
+	        printf("s[%d] = %d\ns[%d] = %d\ns[%d] = %d\n",k-1,s[k-1],k,s[k],k+1,s[k+1]); } }
+	if (temp==1)
+	printf("Yes");
+	else if (temp==0)
+	printf("No");
+	return 0; }

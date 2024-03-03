@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+    int n,a[i];
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    for(i=0;i<n;i++) {
+        for(j=0;j<n;j++) {
+            if(a[j]==a[i])
+            count++;
+            if(count==a[i])
+            flag=0;
+            else {
+                flag=1;
+                break; } }
+        if(flag==1)
+        break; }
+    if(flag==0)
+    printf("Yes");
+    else
+    printf("No");
+    return 0; }

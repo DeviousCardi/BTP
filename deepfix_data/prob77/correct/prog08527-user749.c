@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int i,j,max,min,n;
+    int w[999];
+    scanf("%d",&n);
+    for(i=0;i<=n;i++){
+        scanf("%d",w[i]); }
+    max=min=w[0];
+    for(i=0;i<=n;i++){
+        if(w[i+1]>w[i]) max=w[i+1]; }
+    for(j=0;j<=n;j++){
+        if(w[i+1]<w[i]) min=w[i+1]; }
+    printf("end");
+    return 0; }

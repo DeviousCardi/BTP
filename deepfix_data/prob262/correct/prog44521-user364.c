@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<strings.h>
+void rev(long int a[],long int temp[],long int n,int i,long int index) {
+    if(i==n) {
+        for(int j=0;j<n;j++)
+        printf("%ld ",temp[j]);
+        return; }
+    temp[i]=a[index];
+    return rev(a,temp,n,i+1,index-1); }
+int main() {
+   long int n;
+   int i;
+   long int a[100000000],b[1000000000];
+   scanf("%ld",&n);
+   for(i=0;i<n;i++)
+    scanf("%ld ",&a[i]);
+    rev(a,b,n,0,n-1);
+    return 0; }

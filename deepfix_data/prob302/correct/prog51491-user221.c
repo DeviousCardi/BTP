@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+	float ax,ay,cx,cy,px,py,a,b,c,d;
+	scanf("%f%f%f%f%f%f",&ax,&ay,&cx,&cy,&px,&py);
+	if(ay>cy){
+	    a=cy;c=cx;
+	    cy=ay;cx=ax;
+	    ay=a;ax=c; }
+	if(cx<ax){
+	    b=cx;d=cy;
+	    cx=ax;cy=ay;
+	    ax=b;ay=d; }
+	if(px<cx&&px>ax&&py<cy&&py>ay){
+	    printf("Point is inside the rectangle."); }
+	else
+	if(px>cx&&px<ax&&py<cy&&py>ay){
+	    printf("Point is outside the rectangle."); }
+	else{
+	    printf("Point is on the rectangle.");}
+	return 0; }

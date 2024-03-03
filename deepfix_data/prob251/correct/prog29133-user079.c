@@ -1,0 +1,16 @@
+#include<stdio.h>
+int ans=0;
+int count(n)
+{   int temp;
+    if(n==0)
+    {ans++;
+    return 1; }
+    if(n<0)
+    return 0;
+    return count(n-1) || count(n-2) || count(n-3); }
+int main() {
+    int n,i;
+    scanf("%d",&n);
+    i=count(n);
+    printf("%d",ans);
+    return 0; }

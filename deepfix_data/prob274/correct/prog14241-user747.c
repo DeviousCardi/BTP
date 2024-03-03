@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(){
+    int i=0,t=0,k=0,n=0,j=0,l=0;
+    int a[150],x=0,count=0;
+    scanf("%d\n",&n);
+    for(i=0;i<n;i++){
+        scanf("%d ",&a[i]); }
+    x=a[0];
+    for(j=2;j<n;j++){
+        x=a[j];
+        while(x!=a[1]){
+            j=x;
+            printf("%d ",j);
+            t=t+1;
+            continue; }
+        if(x==a[1]){
+            printf("%d",t); }
+        printf("%d",t);
+    continue; }
+    printf("%d",t);
+    return 0; }

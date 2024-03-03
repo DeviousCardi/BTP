@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int n,t,a,b,i;
+    i=1;
+    t=0;
+    scanf("%d %d %d",&a,&b,&n);
+        if(i=1) {
+            t=a; }
+        else if(i=2) {
+            t=b; }
+        else {
+            do{
+        t=t+i-2;
+        i=t+2; }
+        while((i>2)&&(i<=n));
+        printf("%d",t); }
+    printf("%d",t);
+    return 0; }

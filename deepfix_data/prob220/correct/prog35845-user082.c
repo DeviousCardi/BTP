@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int height;
+	scanf("%d",&height);
+	int n=height;
+	int i,j,m,y,x,k;
+	for(i=1;i<=n;i++) {
+	    m=1;
+	    for(y=1;y<i;y++) {
+	        m=m+2; }
+	    for(j=n-i;j>0;j--) {
+	        printf(" "); }
+	    for(k=1;k<=m;k++) {
+	        if(k%2==0) {
+	            printf(" "); }
+	        else {
+	            printf("*"); } } }
+	return 0; }

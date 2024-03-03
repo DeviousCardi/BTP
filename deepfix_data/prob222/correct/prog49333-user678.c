@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    float msma, msmb, msmc;
+    scanf("%f%f%f", &msma, &msmb, &msmc);
+    float esma, esmb, esmc;
+    scanf("%f%f%f", &esma, &esmb, &esmc);
+    float A=(msma*40)/50+(esma*60)/100;
+    float B=(msmb*40)/50+(esmb*60)/100;
+    float C=(msmc*40)/50+(esmc*60)/100;
+    printf("Median weighted score = %.2f\n%.2f\n%.2f\n", A,B,C);
+    if(A<=B&&B<=C) {
+    printf("Median weighted score = %.2f", B);
+    printf("hi\n"); }
+    else
+    {    printf("hi\n");
+        if(C<=A&&A<=B) {
+            printf("Median weighted score = %.2f", A);
+                printf("hi\n"); }
+        else {
+        if(B<=C&&C<=A) {
+            printf("Median weighted score = %.2f", C);
+                printf("hi\n"); } } }
+	return 0; }

@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    int n,i,j,k;
+    scanf("%d", &n);
+    for (i=1; i<=(n+1)/2; i++) {
+        for (j=(n+1)/2-i;j>=0;j++)
+        printf(" ");
+        for (k=(n+1)/2-i+1;k<=(n+1)/2+i-1;k++)
+        printf("%d",k); }
+    return 0; }

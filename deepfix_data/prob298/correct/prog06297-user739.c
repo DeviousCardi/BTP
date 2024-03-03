@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+int catlan(int n) {
+    int k;
+    if(n==1)
+    return 1;
+    else
+    k=2*catlan(n-1)*(2*n-1)/(n+1);
+    return k; }
+int main() {
+    int i,t;
+	scanf("%d",&t);
+	int str[t];
+	int cat[18];
+	for(i=0;i<t;i++) {
+	    scanf("%d",&str[i]); }
+    for(i=0;i<18;i++) {
+        cat[6]=catlan(6); }
+    printf("%d",cat[6]);
+	return 0; }

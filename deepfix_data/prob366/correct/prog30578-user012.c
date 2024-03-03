@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+     int c[401];
+    int n;
+    scanf("%d\n",&n);
+    for(int i=0;i<2*n;i++) {
+        scanf("%d",&c[i]); }
+    int min=2*n-1;
+    int dist;
+    for(int i=0;i<n;i++) {
+        for(int j=i+1;j<2*n;j++) {
+            if(c[i]==c[j]) {
+                dist=j-i;
+                  if(min>dist)                                                          {
+                      min=dist; } } } }
+    printf("%d",min);
+    return 0; }

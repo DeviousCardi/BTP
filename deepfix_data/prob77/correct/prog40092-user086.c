@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int a,b[1000];
+    int max=b[0],j=0,k=0,i,min=b[0];
+    scanf("%d",&a);
+    for(i=0;i<a;i++) {
+    scanf("%d",&b[i]); }
+       for(i=0;i<a;i++) {
+           printf("%d",b[i]); }
+    printf("end");
+    return 0; }

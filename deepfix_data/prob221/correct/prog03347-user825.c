@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main() {
+    int h,i,j,k;
+    scanf("%d",&h); {
+      for(i=1;i<=(2*h-1);i=i+1)
+      printf("*");
+      printf("\n"); }
+    i=1;
+    for(j=1;i<=i;j=j+1)
+    printf(" ");
+    printf("*");
+return 0; }

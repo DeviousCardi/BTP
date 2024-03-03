@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+    int n,k;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]); }
+        for(int i=0;i<n;i++) {
+            k=a[i];
+            for(int j=0;j<n;j++){
+             if(a[j]<=a[i]){
+                 a[i]=a[j];
+                 a[j]=k;
+              k=a[i];} } }
+    float m;
+    if((n%2)!=0){
+        m=a[(n/2)+1];
+        printf("%f",m); }
+    else{
+        m=(a[n/2]+a[(n+2)/2])/2.0;
+        printf("%.1f",m); }
+    return 0; }

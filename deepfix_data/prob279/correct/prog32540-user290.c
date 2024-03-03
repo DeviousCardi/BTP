@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int n,missing,twice,k,i;
+    scanf("%d",&n);
+    int arr[n+1];
+    for(i=0;i<=n;i++){
+        arr[i] = 0; }
+    for(i=1;i<=n;i++){
+        scanf("%d",&k);
+        arr[k]++; }
+    for(i=1;i<=n;i++){
+        if(arr[i] == 0){
+            missing = i;
+        }else if(arr[i]==2){
+            twice = i; } }
+    printf("%d\n",twice);
+    printf("%d",missing);
+    return 0; }

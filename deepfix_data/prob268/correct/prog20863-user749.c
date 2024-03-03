@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+long count=0;
+int coins[]={1,3,5};
+long *memarray[3];
+void getways(int x, int m) {
+    if(m==1){
+        count++;
+        long max=x%coins[m];
+        int i;
+        for(i=0;i<=max;i++){
+            long total=i*coins[m];
+            getways(x-total,m-1); } } }
+int main() {
+    int n,i;
+    scanf("%d",&n);
+    for(i=0;i<3;i++){
+        memarray[i]=(long*)(malloc(n*sizeof(long))); }
+    getways(n,3);
+    printf("%ld",count);
+    return 0; }

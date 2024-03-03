@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int n,k,i,j,l;
+    int list[1000];
+    scanf("%d%d",&k,&n);
+    for(i=0;i<n;i++)
+        list[i]=getchar();
+    for(l=0;l<n;l++) {
+        for(j=0;j<n;j++) {
+          if(list[l]==k-list[j]) {
+              printf("lucky");
+             return 0; } }
+    }printf("%d",l);
+    if(l==n)
+    printf("unlucky");
+    return 0; }

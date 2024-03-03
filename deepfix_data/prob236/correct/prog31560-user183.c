@@ -1,0 +1,15 @@
+#define MAXNUM 100
+#include <stdio.h>
+int main() {
+    int books[MAXNUM], position[MAXNUM];
+    int n, i, j;
+    scanf("%d", &n);
+    for(i=0; i<=n; i++) {
+        scanf("%d", &books[i]); }
+    for (j=0; j<=n; j++) {
+        scanf("%d", &position[j]); }
+    for(j=0; j<=n; j++) {
+        i = j;
+        printf("%d ", books[i]); }
+    printf("end");
+    return 0; }

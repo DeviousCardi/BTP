@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{   int i,j,n;
+    scanf("%d",&n);
+    for(i=1;i<=(n+1)/2;i++)
+        { for(j=1;j<=n;j++)
+            { if(j>((n+1)/2)-i && j<((n+1)/2)+i)
+                printf("*");
+              else
+                printf(" "); }
+        printf("\n"); }
+    for(i>(n+1)/2;i<=n;i++)
+        { for(j=n;j>=1;j--)
+            { if(j>=2*i-n &&j<=2*i+n)
+                printf("*");
+              else
+                printf(" "); }
+        printf("\n"); }
+	return 0; }

@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main() {
+    int n,k; scanf("%d %d",&n,&k);
+    int a[n],count[k+1],start_in[k+1],output[n];
+    for (int i=0;i<k+1;i++) count[i]=0;
+    for (int i=0;i<n;i++) {
+            scanf("%d",&a[i]);
+            count[a[i]]+=1; }
+    int total=0;
+    for (int i=0;i<k+1;i++) {
+            int oldcount=count[i];
+            start_in[i]=total;
+            total+=oldcount; }
+    for (int i=0;i<k+1;i++) printf("%d ",start_in[i]);
+    return 0; }

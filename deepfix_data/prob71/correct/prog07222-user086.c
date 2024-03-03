@@ -1,0 +1,35 @@
+#include <stdio.h>
+int find_min(int a[],int start,int end) {
+    int i,index,temp=a[start];
+    for(i=start;i<end;i++) {
+        if(temp>a[i]) {
+            temp=a[i];
+            index=i; } }
+    return index; }
+void swap(int a[],int x,int y) {
+    int temp=a[x];
+    a[x]=a[y];
+    a[y]=temp; }
+void sel_sort(int a[],int start,int n) {
+    if(start==n-1) {
+        return; }
+    else {
+      int index;
+      index=find_min(a,start,n);
+      swap(a,start,index);
+      sel_sort(a,start+1,n); } }
+int main() {
+    int a[100000],n,i;
+    scanf("%d",&n);
+    for(i=0;i<n;i++) {
+        scanf("%d",&a[i]); }
+    sel_sort(a,0,n);
+    if(n%2==0) {
+        int j;
+        j=n/2-1;
+        float x=(a[j]+a[j+1])/2.0;
+        printf("%f",x); }
+    else {
+        int j=n/2;
+        printf("%d",a[j]); }
+    return 0; }

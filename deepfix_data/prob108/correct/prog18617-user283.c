@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int n,i=1,j,sp;
+    printf("Enter no of rows: ");
+    scanf("%d", &n);
+    printf("*");
+    for(i=1; i<=n; i++) {
+  printf("*");
+  for(sp=1; sp<i; sp++)
+    printf(" ");
+  printf("*\n"); }
+ for(j=1; j<=n+2; j++)
+   printf(" ");
+	return 0; }

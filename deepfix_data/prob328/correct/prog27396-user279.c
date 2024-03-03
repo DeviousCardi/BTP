@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+int fibo(int j) {
+    if (j == 0) {
+      return 0; }
+    else if (j == 1) {
+        return 1; }
+    else {
+        return(fibo(j - 1) + fibo(j - 2)); } }
+int main() {
+  int i,k,j,t;
+  scanf("%d",&t);
+  for(i=0;i<t;i++) {
+      scanf("%d",&k);
+      for(j=0;j<k;j++) {
+          if(fibo(j)==k)
+          printf("yes\n");
+          else
+          printf("no\n"); } }
+     return 0; }

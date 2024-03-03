@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int k,i,n,j;
+    scanf("%d",&k);
+    scanf("%d",&n);
+    j=n-1;
+    int luc[100];
+    for(i=0;i<n;i++) {
+        scanf("%d",&luc[i]); }
+    for(i=0;i<n;i++) {
+        for(j=i+1;j<n+1;j++) {
+            if((luc[i]+luc[j])%k==0)
+            printf("lucky");
+            break; } }
+    return 0; }

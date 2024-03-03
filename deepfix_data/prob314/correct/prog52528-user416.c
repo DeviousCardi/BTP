@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int n,j,l,m;
+	int a[20];
+	int x=0;
+	scanf ("%d",&n);
+	for (j=0;j<n;j++) {
+	    scanf("%d",&a[j]); }
+      scanf ("%d",&m);
+    for(l=0;l<m;l++) {
+        scanf("%d",&x);
+        if(n==1)
+        printf("Yes");
+        else
+        if(x==0 && a[0]<a[1])
+        printf("Yes");
+        else if (x==(n-1) && a[x]<a[x-1])
+        printf("Yes");
+        else if(a[x]<a[x-1] && a[x]<a[x+1] )
+        printf("Yes");
+        else
+        printf("No");
+        printf("\n"); }
+	return 0; }

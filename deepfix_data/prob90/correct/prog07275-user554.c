@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){
+    int k,n,i,l;
+    scanf("%d",&k);
+    scanf("%d",&n);
+    int arr[n];
+    int flag=0;
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]); }
+    int noc[5000];
+    for(int i=0;i<5000;i++){
+        noc[i]=0; }
+    for(int i=0;i<n;i++){
+        l=arr[i];
+        noc[l]++; }
+    for(i=0;i<=(k/2);i++){
+       if(noc[i]!=0 && noc[k-i]!=0){
+           printf("%d %d",noc[i],noc[k-i]);
+             printf("lucky");
+             flag=1;
+             break; } }
+    if(flag==0){
+         printf("unlucky"); }
+    return 0; }

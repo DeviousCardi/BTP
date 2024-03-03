@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main() {
+    int a[50],b[50],i,s,d,n,t=0;
+    scanf("%d",&d);
+    scanf("%d",&n);
+    for(i=0;i<d;i++) {
+        scanf("%d",&a[i]);
+    b[i+1]=a[i]; }
+    for(i=0;i<d;i++) {
+        t=t+a[i]; }
+    if(n<d) {
+        i=0;
+        s=0;
+        while(i<=n) {
+        s=s+a[i];
+        i++; }
+        printf("%d",s); }
+    if(n==d) {
+        printf("%d",b[d]); }
+    b[0]=0;
+    if(n>d)
+    {s=0;
+        for(i=d+1;i<=n;i++) {
+            t=t-b[i-d-1];
+            b[i]=b[i-1]+t; }
+        printf("%d",b[n]); }
+    return 0; }

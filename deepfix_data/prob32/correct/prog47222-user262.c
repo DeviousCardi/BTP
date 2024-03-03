@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int i,n;
+	scanf("%d",&n);
+	int a [20];
+	for (i=0;i<n;i++) {
+	    scanf("%d",&a[i]); }
+	i=i-1;
+	if (a[i]<a[i-1] && a[i]<a[i+1]) {
+	    printf("Yes"); }
+	else {
+	    printf("No"); }
+	return 0; }

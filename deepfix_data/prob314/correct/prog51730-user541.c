@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int i,n;
+    char a[20];
+    scanf ("%d",&n);
+    for (i=0;i<n;i++){
+        scanf ("%c",&a[i]); }
+    for (i=1;i<n;i++){
+        if ((a[i]<a[i-1]) && (a[i+1]))
+        printf ("%d",i);
+        break; }
+	return 0; }

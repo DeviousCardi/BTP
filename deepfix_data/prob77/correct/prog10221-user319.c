@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+    int m,a,b,c,d,x,y;
+    scanf("%d\n",&m);
+     int num[m];
+     int max(int num1[x],int num2[y]);
+     if(num[x]<num[y]){
+         return x; }
+     else{
+         return y; }
+     int min(int num1[x],int num2[y]);
+     if(num[x]<num[y]){
+         return x; }
+     else{
+         return y; }
+     a=max(num[x],num[y]);
+     b=min(num[x],num[y]);
+    b=a;
+    for(int i=1;i<=m;i++){
+        scanf("%d",&num[i]); }
+      for(int j=1;j<=m;j++){
+         printf("%d",num[j]); }
+    printf("end");
+    return 0; }

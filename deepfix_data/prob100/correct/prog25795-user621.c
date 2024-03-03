@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<limits.h>
+int max(int a,int b){
+    if(a>=b)
+    return a;
+    else
+    return b; }
+int min(int a,int b){
+    if(a>=b)
+    return b;
+    else
+    return a; }
+int main() {
+    int m,n,temp,mx,mn;
+    scanf("%d,%d",&m,&n);
+    scanf("%d",&mx);
+    printf("%d %d ",m,n);
+        for(int i=1;i<=m;i++) {
+            scanf("%d",&temp);
+            mx=max(mx,temp);
+            printf("%d ",mx); }
+    mn=mx;
+    printf("%d",mn);
+    return 0; }

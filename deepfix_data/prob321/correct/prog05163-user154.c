@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    int x1,x2,y1,y2;
+        scanf("%d %d\n",&x1,&x2);
+        scanf("%d %d",&y1,&y2);
+    float slope;
+        float x=(float)(x1-x2);
+        float y=(float)(y1-y2);
+        if (y==0.0)
+          printf("inf");
+        else {
+          slope = x/y;
+          printf("%.2f",slope); }
+    return 0; }

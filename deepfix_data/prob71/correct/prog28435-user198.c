@@ -1,0 +1,22 @@
+#include <stdio.h>
+int n;
+void kd(int s[],int i) {
+    int j,k,p=0;
+    if(i==n) {
+         for(j=0;j<n;j++)
+         printf("%d",s[j]);
+         return; }
+    for(j=0;j<i;j++) {
+        for(k=0;k<i;k++)
+        if(s[j]>s[k+1]) {
+            s[j]=p;
+            s[j]=s[k];
+            s[k]=p; } }
+    kd(s,i+1); }
+int main() {
+    int s[100000],i;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    scanf("%d",&s[i]);
+    kd(s,0);
+    return 0; }

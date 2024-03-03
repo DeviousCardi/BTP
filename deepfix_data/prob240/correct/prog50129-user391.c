@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+long int catalan(int n);
+long int catalan(int n){
+        int k;
+         if(n==0)
+           return 1;
+        int num;
+         for(k=0;k<n;k++) {
+            num=catalan(k)*catalan(n-k-1); }
+         return num; }
+int main() {
+    int n;
+    scanf("%d",&n);
+    int k;
+    printf("%ld",catalan(2));
+    return 0; }

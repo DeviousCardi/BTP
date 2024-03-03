@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int ti;
+	float tax;
+	scanf("%d",&ti);
+	if(ti<=200000)
+	printf("0.00");
+	else if((ti<=500000)&&(ti>200000))
+	printf("%0.2f",tax=0.1*(ti-200000));
+	else if((ti<=1000000)&&(ti>500000))
+	printf("%0.2f",tax=30000+0.2*(ti-500000));
+	else {
+	    printf("%0.2f",tax=130000+0.3*(ti-1000000)); }
+	return 0; }

@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int n,i;
+	int a[n];
+	scanf("%d",a[n]);
+	int j,k;
+	int sum=0;
+	for(j=1;j<n;j++){
+	    if(a[n]%j==0){
+	        sum=sum+j; } }
+	printf("%d",sum);
+	if(sum==a[n]){
+	    printf("Yes"); }
+	else{
+	    printf("No"); }
+	return 0; }

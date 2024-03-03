@@ -1,0 +1,26 @@
+#include <stdio.h>
+void sort(long int,long int[]);
+int main() {
+    long int n,i,rank,j,a,b;
+    scanf("%ld",&n);
+    long int bid[n];
+    for(i=0;i<n;i++) {
+        scanf("%ld",&bid[i]); }
+   for(i=0;i<n;i++) {
+       rank=0;
+       for(j=0;j<n;j++) {
+           if(bid[i]<bid[j]) {
+               rank++; } }
+       if(n%2!=0) {
+           if(rank==(n-1)/2) {
+               printf("%ld",bid[i]);
+               break; }
+           else if(n%2==0) {
+               if(rank==(n/2)-1) {
+                   a=bid[i]; }
+               if(rank==(n/2)+1) {
+                   b=bid[i]; } } } }
+   printf("%ld %ld\n",a,b);
+   if(n%2==0) {
+       printf("%ld",(a+b)/2); }
+    return 0; }

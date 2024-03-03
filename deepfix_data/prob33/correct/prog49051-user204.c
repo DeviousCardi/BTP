@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int h,p,i,d,m,ht;
+    scanf("%d\n%d",&h,&p);
+    scanf("%d",&ht);
+    d=0;
+    for(i=1;i<p;i++){
+        m=ht;
+        scanf("%d",&ht);
+        if(m>ht){
+            d+=m-ht; } }
+    if(d>=h)
+        printf("No");
+    else
+        printf("Yes");
+    return 0; }

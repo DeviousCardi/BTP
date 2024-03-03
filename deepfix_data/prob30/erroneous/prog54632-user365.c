@@ -1,0 +1,21 @@
+#include <stdio.h>
+int arr[100]={0};
+int n;
+int getMaxLessThan(int upperLimit) {
+    int mindiff,i,diff[i],count;
+    for(i=0;i<n;i++){
+        diff[i]=upperLimit-arr[i]; }
+    max=diff[0];
+    for(i=1;i<n;i++){
+        if(mindiff>diff[i]) {
+            mindiff=diff[i];
+            count=i; } }
+    printf("%d",arr[i]);
+    return arr[i]; }
+int main() {
+    int k,i=0;
+    scanf("%d %d",&n,&k);
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]); }
+    getMaxLessThan(k);
+    return 0; }

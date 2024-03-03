@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    int n,i,j;
+    int input[20];
+    scanf("%d",&n);
+      for(i=0;i<n;i++)
+        scanf("%d",&input[i]);
+      for(j=1;j<n-1;j++) {
+          if(input[j]<input[j-1] && input[j]<input[j+1])
+           printf("Yes");break; }
+	return 0; }

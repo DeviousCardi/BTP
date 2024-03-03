@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    long int N,S,i,k;
+    long int a[10002];
+    scanf("%ld\n",&N);
+    for(i=0;i<N;i++) {
+        scanf("%ld",&a[i]); }
+    scanf("%ld\n",&S);
+    for(i=0;i<n;i++) {
+        for(k=i+1;k<n;k++) {
+            if(a[i]+a[k]==S) {
+                printf("(%ld %ld)",a[i],a[k]); } } }
+	return 0; }

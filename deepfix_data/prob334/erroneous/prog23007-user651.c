@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int i,j,k,h,b,ct=1,c=0;
+	scanf("%d %d",&h,%b);
+	for(i=1;i<=h;i++) {
+	    for(j=i;j<h;j++) {
+	        printf(" ");
+	        c++; }
+	    for(k=1;k<=(h-2*c);k++) {
+	        printf("%d",ct);
+	        if(ct<9)ct++;
+	        else {
+	            ct=ct+1;
+	            ct=ct%10; } }
+	    for(k=(h-2*c);k<=h;k++) {
+	        printf(" "); }
+	    printf("\n"); }
+	return 0; }

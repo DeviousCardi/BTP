@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+    int n1=0;
+    int n,i,j=0,p1;
+    int lst[1000];
+    int p[1000];
+    scanf("%d\n%d\n",&n1,&n);
+    for(i=0;i<1000;i++){
+        lst[i]=0;
+        p[j]=0; }
+    for(i=0;i<n;i++){
+    scanf("%d",&lst[i]);
+      p1=lst[i];
+      lst[p1]=1; }
+    for(p1=1;p1<n1;p1++)
+    printf("%d",lst[p1]);
+    for(i=0;i<=500;i+=2){
+        if(lst[i]==1 && lst[n1-i]==1){
+            printf("lucky");
+            break; } }
+    if(i>500)
+     printf("unlucky");
+    return 0; }
